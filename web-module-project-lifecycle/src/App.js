@@ -12,7 +12,7 @@ import User from './components/User';
 class App extends React.Component{
 
   state = {
-    user: ''
+    user: '',
   }
 
   componentDidMount(){
@@ -33,8 +33,8 @@ class App extends React.Component{
 
   render(){
     return(
-      <div>
-        <h1>Fernando</h1>
+      <div className='main-container'>
+        <h1>GitHub User: <a href={this.state.user.html_url} target='_blank' rel='noreferrer'>{this.state.user.name}</a></h1>
         <User user={this.state.user}/>
       </div>
     )

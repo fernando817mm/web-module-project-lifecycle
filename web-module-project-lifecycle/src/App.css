@@ -1,3 +1,10 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  max-width: 100%;
+}
+
 .App {
   text-align: center;
 }
@@ -35,4 +42,90 @@
   to {
     transform: rotate(360deg);
   }
+}
+
+body{
+  background: linear-gradient(141deg, #9fb8ad 0%, #1fc8db 51%, #2cb5e8 75%);
+}
+
+.main-container{
+  width: 50%;
+  margin: auto;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  border-radius: 5px;
+  box-shadow: 0 1px 6px -2px #000;
+  background-color: #FFF;
+  margin-bottom: 30px;
+}
+
+.main-container h1{
+  text-align: center;
+}
+
+.main-container h1 a{
+  color: lightskyblue;
+}
+
+.user-container{
+  margin-bottom: 5%;
+}
+
+.user-container img{
+  width: 30%;
+  margin: 5% 35%;
+  border-radius: 5px;
+  box-shadow: 0 1px 6px -2px #000;
+  background-color: #FFF;
+}
+
+.follower-container{
+  display: flex;
+  flex-direction: column;
+}
+
+.follower-container h2{
+  text-align: center;
+  margin-bottom: 1%;
+}
+
+.follower-container img{
+  margin: 2% 0;
+}
+
+.follower{
+  width: 50%;
+  margin: auto;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  border-radius: 5px;
+  box-shadow: 0 1px 6px -2px #000;
+  background-color: lightgreen;
+  margin-bottom: 30px;
+}
+
+.follower img{
+  align-self: center;
+  width: 150px;
+  height: 150px;
+  border-radius: 3px;
+  margin-right: 20px;
+}
+
+.follower h2{
+  font-size: 2rem;
+  align-self: center;
+}
+
+.follower a{
+  font-size: 1rem;
+  align-self: center;
+}
+
+span{
+  color: black;
+  text-decoration: none;
+  font-weight: bold;
 }
